@@ -1,15 +1,21 @@
+
+
 import './App.css'
+import CustomColorCard from './components/shoe/CustomColorCard'
 
 function App() {
 
 
   return (
-    <>
-    
-      <p className="text-3xl text-slate-900 ">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div className=' w-full h-screen'>
+    {/* <Shoe /> */}
+    {/* <ShoeOverLay /> */}
+    {/* <ProductCard /> */}
+    {/* <NikeShoe /> */}
+    {/* <ClockCard /> */}
+    <CustomColorCard />
+   
+    </div>
   )
 }
 
