@@ -1,10 +1,10 @@
 import React from "react";
-import copy1 from "../../assets/copy1.png";
 import img from "../../assets/shoes/Shoe2.png";
+import copy1 from "/assets/copy1.png";
 const ShoeOverLay = () => {
   return (
     <div className="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16">
-        <h2 className="text-3xl flex justify-start mb-2 text-slate-400" >Card item 2 </h2>
+        <h2 className="text-3xl flex justify-start mb-2 text-slate-400" >Shoe overlay card </h2>
       <div className="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-10">
         <div className="rounded overflow-hidden shadow-lg">
           <a href="#"></a>
@@ -28,7 +28,7 @@ const ShoeOverLay = () => {
 
         
                 <div className="absolute top-6 p-2 w-full flex justify-between items-center">
-                  <button className="bg-gradient-color-3 px-2 hover:text-gray-100 py-2 rounded-lg shadow-custom text-white text-sm hover:text-gray-100">
+                  <button className="bg-slate-700 px-2  py-2 rounded-lg shadow-custom text-white text-sm hover:text-gray-100">
                     New Season
                   </button>
                   <button className="w-12 h-12 p-1 hover:border-slate-200 hover:border flex justify-center items-center">

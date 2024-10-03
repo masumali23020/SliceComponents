@@ -4,7 +4,6 @@ import Shoe from '../shoe/Shoe';
 import ClockCard from './../shoe/ClockCard';
 import NikeShoe from './../shoe/NikeShoe';
 import ProductCard from './../shoe/ProductCard';
-import ShoeOverLay from './../shoe/ShoeOverLay';
 import ShoeCard from './../ShoeCard';
 
 const Day1 = () => {
@@ -15,7 +14,7 @@ const Day1 = () => {
         <ClockCard />
         <NikeShoe />
         <ProductCard />
-        <ShoeOverLay />
+        {/* <ShoeOverLay /> */}
         <ShoeCard />
       
     </div>

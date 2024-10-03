@@ -1,6 +1,7 @@
 import React from "react";
 import copy from "../../assets/copy.png";
-import shoe1 from "../../assets/shoes/shoe1.png";
+// import shoe1 from "../../assets/shoes/shoe1.png";
+import shoe1 from "/assets/shoes/shoe1.png";
 
 const Shoe = () => {
   return (
