@@ -1,5 +1,6 @@
 import React from 'react'
 import Iphone from './Iphone'
+import TeamCard from './TeamCard'
 import UiKit from './UiKit'
 
 const Day2 = () => {
@@ -7,6 +8,7 @@ const Day2 = () => {
     <div>
         <Iphone />
         <UiKit />
+        <TeamCard />
     
       
     </div>
