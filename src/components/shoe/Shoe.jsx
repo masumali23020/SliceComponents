@@ -13,6 +13,7 @@ const Shoe = () => {
 
         <div className="absolute top-6 p-2 w-full flex justify-between items-center">
           <button className="bg-gradient-color-3 px-1 py-2 rounded-lg shadow-custom text-white text-sm">New Season</button>
+          
           <button className="w-12 h-12 p-1 hover:border-slate-200 hover:border flex justify-center items-center">
             <img className="w-full h-full bg-cover" src={copy} alt="Copy" />
           </button>
