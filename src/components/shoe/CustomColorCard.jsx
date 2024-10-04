@@ -20,11 +20,11 @@ const CustomColorCard = () => {
 
             <div className="flex flex-col space-y-2 p-4 mt-3">
               <h2 className="font-semibold text-base tracking-widest">Genaring</h2>
-              <h1 className="text-sm text-[#C3C3C3]">Soft Plushy Cushion Chair</h1>
+              <h1 className="text-[12px]  text-[#C3C3C3]">Soft Plushy Cushion Chair </h1>
               <h1 className="text-xl text-emerald-600">$60</h1>
             </div>
 
-            <div className="space-x-1 flex justify-center mt-5">
+            <div className="space-x-1 flex justify-center ">
               {/* Stars for rating */}
               {[...Array(3)].map((_, index) => (
                 <svg
@@ -49,7 +49,7 @@ const CustomColorCard = () => {
               ))}
             </div>
 
-            <button className="w-full mt-[22px] p-2 px-5 bg-purple-500 text-white rounded-md transition-opacity duration-300">
+            <button className="w-full mt-11 p-2 px-5 bg-purple-500 text-white rounded-md transition-opacity duration-300">
               Add To Cart
             </button>
           </section>
