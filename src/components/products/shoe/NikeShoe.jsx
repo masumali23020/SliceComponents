@@ -22,11 +22,11 @@ const NikeShoe = () => {
            <h3 className="text-lg font-bold text-gray-900 w-full ">Product Name</h3>
            <div className="relative group w-full">
              {/* Button for adding */}
-             <button className="opacity-100 group-hover:opacity-0 bg-gray-900 text-white py-2 px-4 rounded-full font-bold transition-opacity absolute -top-3 right-0 transition-transform duration-100">
+             <button className="opacity-100 group-hover:opacity-0 bg-gray-900 text-white py-2 px-4 rounded-full font-bold transition-opacity absolute -top-3 right-0 transform duration-300">
                +
              </button>
              {/* Button for "Add to" */}
-             <button className=" absolute -top-3 right-0  opacity-0 group-hover:opacity-100 transition-opacity bg-gray-800 text-white font-bold py-1.5 px-3 rounded-full text-[12px] flex items-center transition-transform duration-100">
+             <button className=" absolute -top-3 right-0  opacity-0 group-hover:opacity-100 transition-opacity bg-gray-800 text-white font-bold py-2 px-3 rounded-full text-[12px] flex items-center transform duration-300">
                <svg
                  xmlns="http://www.w3.org/2000/svg"
                  fill="none"

@@ -3,12 +3,12 @@ import React from "react";
 const TeamCard = () => {
   return (
     <div className="mt-5">
-      <p className="text-red-400 text-3xl text-start">Teams card design</p>
+      <p className="text-red-400 text-3xl text-start">Teams card design (custom )</p>
 
-      <div className="w-full  border border-border rounded ">
+      <div className="w-full border border-border rounded">
         <div className="p-8 mb-4 grid grid-cols-2 md:grid-cols-3 gap-4 w-full">
           {[1, 2, 3].map((item, ind) => (
-            <div key={ind} className="w-full  rounded shadow-lg p-4">
+            <div key={ind} className="w-full rounded shadow-lg p-4">
               <div className="w-full flex items-center justify-between mb-4">
                 <div className="flex items-center gap-2">
                   <svg
@@ -40,8 +40,8 @@ const TeamCard = () => {
               </div>
               <img
                 src="https://img.freepik.com/free-psd/3d-interface-website-presentation-mockup-isolated_359791-208.jpg"
-                alt=""
-                className="rounded-lg"
+                alt="Team Design"
+                className="rounded-lg w-full h-auto"
               />
               <h2 className="font-[600] text-[1.3rem] py-4">Simple Design</h2>
               <div className="w-full flex items-center justify-between relative">
@@ -60,7 +60,7 @@ const TeamCard = () => {
                       <img
                         key={index}
                         src={src}
-                        alt=""
+                        alt={`Team Member ${index + 1}`}
                         className={`w-[30px] h-[30px] object-cover rounded-full border border-secondary absolute right-[${
                           (index + 1) * 5
                         }%] top-0`}

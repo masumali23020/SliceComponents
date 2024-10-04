@@ -1,22 +1,24 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import img from "../../assets/day2/axe.png";
 
 const UiKit = () => {
   return (
-    <div className="max-w-screen-xl mx-auto bg-black overflow-hidden mt-10 p-5 h-[600px]">
-      <h1 className="text-start text-3xl mb-3 text-slate-300">
+    <div className="max-w-screen-xl mx-auto bg-gray-500 overflow-hidden mt-10 p-5 h-[600px]">
+      <Link to="https://www.figma.com/community/file/817313486715931025" className="text-start text-3xl mb-3 text-slate-300">
         I uiKit card design{" "}
-      </h1>
+      </Link>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-10 justify-center items-center ">
+      <div className=" grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-10 justify-center items-center ">
         {/* card  */}
        {[1,2,3].map((item, ind) =>(
-         <div key={ind} className="relative w-[350px] h-[434px]">
-         <svg
+         <div key={ind} className="relative w-[350px] h-[434px] bg-black rounded-[10px] ">
+       <div className="absolute -top-[14px] left-0">
+       <svg
            xmlns="http://www.w3.org/2000/svg"
-           width="381"
-           height="484"
-           viewBox="0 0 381 484"
+           width="350"
+           height="488"
+           viewBox="0 0 350 488"
            fill="none"
          >
            <g filter="url(#filter0_d_1_18)">
@@ -28,10 +30,10 @@ const UiKit = () => {
            <defs>
              <filter
                id="filter0_d_1_18"
-               x="-19"
+               x="0"
                y="0"
-               width="400"
-               height="484"
+               width="350"
+               height="488"
                filterUnits="userSpaceOnUse"
                colorInterpolationFilters="sRGB"
              >
@@ -62,6 +64,7 @@ const UiKit = () => {
              </filter>
            </defs>
          </svg>
+       </div>
 
          {/* card  */}
          <div className="flex p-5 flex-col justify-center items-center absolute top-0 left-0 ">
@@ -83,7 +86,7 @@ const UiKit = () => {
          </div>
 
          {/* icon  */}
-         <div className=" absolute bottom-0 left-0 z-30 flex gap-2 justify-center items-center p-3">
+         <div className="absolute bottom-0 left-0 z-30 flex gap-2 justify-center items-center p-3 overflow-hidden ">
            <svg
              xmlns="http://www.w3.org/2000/svg"
              width="28"
