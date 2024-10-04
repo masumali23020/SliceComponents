@@ -7,7 +7,7 @@ const TeamCard = () => {
 
       <div className="w-full  border border-border rounded ">
         <div className="p-8 mb-4 grid grid-cols-2 md:grid-cols-3 gap-4 w-full">
-          {[1, 2, 3, 4, 5].map((item, ind) => (
+          {[1, 2, 3].map((item, ind) => (
             <div key={ind} className="w-full  rounded shadow-lg p-4">
               <div className="w-full flex items-center justify-between mb-4">
                 <div className="flex items-center gap-2">

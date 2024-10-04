@@ -66,7 +66,7 @@ const UiKit = () => {
          {/* card  */}
          <div className="flex p-5 flex-col justify-center items-center absolute top-0 left-0 ">
            <div className="h-[200px] w-[170px] -rotate-30">
-             <img src={img} alt="UiKit" />
+             <img className="w-full h-full bg-cover" src={img} alt="UiKit" />
            </div>
 
            <h2 className="text-[#000] text-2xl uppercase font-medium mt-3 mb-2 text-left">
