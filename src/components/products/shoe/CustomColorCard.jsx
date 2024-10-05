@@ -1,30 +1,34 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const CustomColorCard = () => {
   return (
-<div className="mt-5">
-      <h1 className="text-start text-3xl text-gray-700 w-full">Watch Card</h1>
-      <div className="grid grid-cols-1 md:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-10">
-        {[1, 2, 3,4,5,6].map((item, ind) => (
-          <section
+    <div className="mt-5">
+      <Link to="https://dribbble.com/shots/3674970/attachments/3674970-Product-Card-Design?mode=media" className="text-start text-3xl text-gray-700 w-full">Watch Card</Link>
+      <div className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-10">
+        {[1, 2, 3,4].map((item, ind) => (
+          <div
             key={ind}
-            className="bg-purple-50 text-center transform duration-500 cursor-pointer rounded-lg shadow-lg w-full h-[400px]"
+            className="bg-purple-50 text-center transform duration-500 cursor-pointer rounded-lg shadow-lg "
           >
-            <div className="w-full h-[170px] rounded-md overflow-hidden">
+            <div className="flex justify-center items-center rounded-md mt-5">
               <img
-                className="object-cover h-full w-full"
-                src="https://images.othoba.com/images/thumbs/0580732_sport-silicon-belt-colourfull-desing-analog-watch.jpeg"
-                alt="Soft Plushy Cushion Chair"
+                className="bg-cover w-[200px] h-[170px] "
+                src="https://timeaccess-store.com/cdn/shop/files/GA-2100TLS-8ADRF_700x.jpg?v=1727965054"
               />
             </div>
 
-            <div className="flex flex-col space-y-2 p-4 mt-3">
-              <h2 className="font-semibold text-base tracking-widest">Genaring</h2>
-              <h1 className="text-[12px]  text-[#C3C3C3]">Soft Plushy Cushion Chair </h1>
+            <div className="flex flex-col space-y-2 py-2">
+              <h2 className="font-semibold text-base tracking-widest">
+                Genaring
+              </h2>
+              <h1 className="text-[12px]  text-[#C3C3C3]">
+                Soft Plushy Cushion Chair a beautiful {" "}
+              </h1>
               <h1 className="text-xl text-emerald-600">$60</h1>
             </div>
 
-            <div className="space-x-1 flex justify-center ">
+            <div className="space-x-1 flex justify-center mb-3">
               {/* Stars for rating */}
               {[...Array(3)].map((_, index) => (
                 <svg
@@ -49,10 +53,10 @@ const CustomColorCard = () => {
               ))}
             </div>
 
-            <button className="w-full mt-11 p-2 px-5 bg-purple-500 text-white rounded-md transition-opacity duration-300">
+            <button className=" w-full  p-2 px-5 bg-[#0995BD] text-white rounded-md transition-opacity duration-300">
               Add To Cart
             </button>
-          </section>
+          </div>
         ))}
       </div>
     </div>

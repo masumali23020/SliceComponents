@@ -86,7 +86,7 @@ const UiKit = () => {
          </div>
 
          {/* icon  */}
-         <div className="absolute bottom-0 left-0 z-30 flex gap-2 justify-center items-center p-3 overflow-hidden ">
+         <div className="absolute bottom-3 left-1 z-30 flex gap-2 justify-center items-center p-3 overflow-hidden ">
            <svg
              xmlns="http://www.w3.org/2000/svg"
              width="28"
