@@ -12,18 +12,18 @@ const UiKit2 = () => {
         I uiKit2 card design{" "}
       </Link>
 
-      <div className="max-w-sm md:max-w-2xl flex flex-col bg-white p-5 rounded-md ">
+      <div className="max-w-sm md:max-w-2xl flex flex-col bg-white rounded-md  px-5">
         <div className=" flex justify-between  gap-5 ">
-          <div className="h-[170px] w-[140px] rotate[-28.903deg]">
+          <div className="h-[215px] w-[265px] rotate[-28.903deg]">
             <img className="w-full h-full bg-cover" src={img} alt="UiKit" />
           </div>
-          <div className="w-2/3p-1 ">
+          <div className="w-2/3 py-8">
             <p className="font-medium text-start text-xl mb-2 ">
               Lorem ipsum dolor sit amet consectetur{" "}
             </p>
             <div className="w-full flex flex-row ">
               {[1, 2, 3, 4].map((item, ind) => (
-                <div key={ind}>
+                <div key={ind} className="mt-[6px]">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -42,11 +42,11 @@ const UiKit2 = () => {
                   </svg>
                 </div>
               ))}
-              <span className="text-sm font-normal italic ml-4 text-[#808080]">
+              <span className="text-sm font-normal italic ml-4 text-[#808080] mt-2">
                 126
               </span>
             </div>
-            <div className=" flex justify-between mt-7">
+            <div className=" flex justify-between mt-[30px]">
               <p className="text-[#808080] text-sm font-normal">
                 Identifier number
               </p>
@@ -57,7 +57,7 @@ const UiKit2 = () => {
             </h1>
           </div>
         </div>
-        <div className="flex justify-between items-center w-full mt-8">
+        <div className="flex justify-between items-center w-full py-4">
           <div className="w-1/2 flex space-x-2 justify-center items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
