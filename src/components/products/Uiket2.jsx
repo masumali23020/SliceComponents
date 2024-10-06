@@ -12,12 +12,12 @@ const UiKit2 = () => {
         I uiKit2 card design{" "}
       </Link>
 
-      <div className="max-w-sm md:max-w-2xl flex flex-col bg-white rounded-md  px-5">
-        <div className=" flex justify-between  gap-5 ">
-          <div className="h-[215px] w-[265px] rotate[-28.903deg]">
-            <img className="w-full h-full bg-cover" src={img} alt="UiKit" />
+      <div className="max-w-sm md:max-w-2xl h-[279px] flex flex-col bg-white rounded-md  px-5">
+        <div className=" flex justify-between  gap-5  h-[219px] ">
+          <div className="h-[219px] w-[262px] rotate[-28.903deg]">
+            <img className="w-[140px] h-[172px] bg-cover" src={img} alt="UiKit" />
           </div>
-          <div className="w-2/3 py-8">
+          <div className="w-full py-8">
             <p className="font-medium text-start text-xl mb-2 ">
               Lorem ipsum dolor sit amet consectetur{" "}
             </p>
@@ -57,7 +57,7 @@ const UiKit2 = () => {
             </h1>
           </div>
         </div>
-        <div className="flex justify-between items-center w-full py-4">
+        <div className="flex justify-between items-center w-full mt-3">
           <div className="w-1/2 flex space-x-2 justify-center items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
