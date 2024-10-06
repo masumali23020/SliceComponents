@@ -13,7 +13,7 @@ const UiKit = () => {
         {/* card  */}
        {[1,2,3].map((item, ind) =>(
          <div key={ind} className="relative w-[350px] h-[434px] bg-black rounded-[10px] ">
-       <div className="absolute -top-[14px] left-0">
+       <div className="absolute -top-[15px] left-0">
        <svg
            xmlns="http://www.w3.org/2000/svg"
            width="350"
