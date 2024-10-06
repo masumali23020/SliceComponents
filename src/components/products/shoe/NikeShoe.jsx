@@ -26,7 +26,7 @@ const NikeShoe = () => {
                 />
               </div>
               <div className=" flex justify-between items-center mt-3 ">
-                <h3 className="text-lg font-bold text-gray-900 w-full ">
+                <h3 className="text-lg font-bold text-gray-900 w-full text-start">
                   Product Name
                 </h3>
                 <div className="relative group w-full">
@@ -35,7 +35,7 @@ const NikeShoe = () => {
                     +
                   </button>
                   {/* Button for "Add to" */}
-                  <button className=" absolute -top-3 right-0  opacity-0 group-hover:opacity-100 transition-opacity bg-gray-800 text-white font-bold py-2 px-3 rounded-full text-[12px] flex items-center  duration-150">
+                  <button className=" absolute -top-3 right-0  opacity-0 group-hover:opacity-100 transition-opacity bg-gray-800 text-white font-medium leading-7 py-2 px-3 rounded-full text-[17px] flex items-center transition-transform  duration-150  ease-in ">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -56,11 +56,18 @@ const NikeShoe = () => {
                   </button>
                 </div>
               </div>
-              <div className="flex flex-col items-start space-y-3 justify-between mt-4 p-4">
-                <p className="text-gray-400 font-normal text-sm">Nike</p>
-                <span className="text-gray-800 font-medium text-lg">
+              <div className="flex flex-col items-start space-y-2 justify-between mt-4">
+                <p className="text-gray-400 font-normal text-sm t">Nike</p>
+                <span className="text-gray-800 font-medium text-lg ">
                   $29.99
                 </span>
+              </div>
+
+              <div className="flex space-x-2 mt-7">
+                <div className=" h-8 w-8 rounded-full bg-[#F9A2BA]"></div>
+                <div className=" h-8 w-8 rounded-full bg-[#A8F3E6]"></div>
+                <div className=" h-8 w-8 rounded-full bg-[#63CEA7;]"></div>
+                <div className=" h-8 w-8 rounded-full bg-[#18C2F8]"></div>
               </div>
 
              
