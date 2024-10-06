@@ -14,8 +14,8 @@ const UiKit2 = () => {
 
       <div className="max-w-sm md:max-w-2xl h-[279px] flex flex-col bg-white rounded-md  px-5">
         <div className=" flex justify-between  gap-5  h-[219px] ">
-          <div className="h-[219px] w-[262px] rotate[-28.903deg]">
-            <img className="w-[140px] h-[172px] bg-cover" src={img} alt="UiKit" />
+          <div className="h-[215px] w-[262px] rotate[-28.903deg]">
+            <img className="w-full h-full bg-cover" src={img} alt="UiKit" />
           </div>
           <div className="w-full py-8">
             <p className="font-medium text-start text-xl mb-2 ">
