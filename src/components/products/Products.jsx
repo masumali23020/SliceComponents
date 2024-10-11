@@ -1,5 +1,5 @@
 
-import GlassMorphison from './GlassMorphison';
+import Gemini from './gemini';
 import Iphone from './Iphone';
 import ClockCard from './shoe/ClockCard';
 import CustomColorCard from './shoe/CustomColorCard';
@@ -35,7 +35,8 @@ const Products = () => {
        <HouseCard />
 
        {/* day 4  */}
-       <GlassMorphison />
+       {/* <GlassMorphison /> */}
+       <Gemini />
       
     </div>
   )
