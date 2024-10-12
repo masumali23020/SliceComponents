@@ -2,7 +2,8 @@
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
 import './App.css'
 import Navbar from './components/Navber'
-import Products from './components/products/Products'
+import Products from './pages/prducts/Products'
+
 
 function App() {
 

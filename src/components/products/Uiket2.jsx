@@ -4,18 +4,32 @@ import img from "../../assets/day2/axe.png";
 
 const UiKit2 = () => {
   return (
-    <div className="max-w-7xl mx-auto bg-gray-500 overflow-hidden mt-10 p-5 h-[600px]">
-      <Link
-        to="https://www.figma.com/community/file/817313486715931025"
-        className="text-start text-3xl mb-3 text-slate-300"
-      >
-        I uiKit2 card design{" "}
-      </Link>
+    <div className="mt-5 mb-10 bg-slate-500 p-5">
+      {/* title  */}
+      <div className="flex justify-between items-center">
+        <h1 className="text-start text-3xl text-gray-700">
+          {" "}
+          I uiKit2 card design Card{" "}
+        </h1>
+
+        <Link
+          to="https://www.figma.com/community/file/817313486715931025"
+          target="_blank"
+        >
+          <span className="text-gray-900 text-lg underline hover:text-blue-400">
+            link
+          </span>{" "}
+        </Link>
+      </div>
 
       <div className="max-w-sm md:max-w-2xl h-[279px] flex flex-col bg-white rounded-md  px-5">
         <div className=" flex justify-between  gap-5  h-[219px] ">
           <div className="h-[215px] w-[262px] rotate[-28.903deg]">
-            <img className="w-full h-full bg-cover" src={img} alt="UiKit" />
+            <img
+              className="w-[140px] h-[172px] bg-cover"
+              src={img}
+              alt="UiKit"
+            />
           </div>
           <div className="w-full py-8">
             <p className="font-medium text-start text-xl mb-2 ">
@@ -95,7 +109,9 @@ const UiKit2 = () => {
                 strokeLinejoin="round"
               />
             </svg>
-            <span>Order delivery</span>
+            <span className="text-[#000] font-medium text-[18px] leading-[120%]">
+              Order delivery
+            </span>
           </div>
           <div className="w-1/2 flex space-x-2 justify-center items-center">
             <svg
@@ -127,7 +143,9 @@ const UiKit2 = () => {
                 strokeLinejoin="round"
               />
             </svg>
-            <span>Order delivery</span>
+            <span className="text-[#000] font-medium text-[18px] leading-[120%]">
+              Order delivery
+            </span>
           </div>
         </div>
       </div>

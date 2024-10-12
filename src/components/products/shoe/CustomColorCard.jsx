@@ -1,61 +1,85 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const CustomColorCard = () => {
   return (
     <div className="mt-5">
-      <Link to="https://dribbble.com/shots/3674970/attachments/3674970-Product-Card-Design?mode=media" className="text-start text-3xl text-gray-700 w-full">Watch Card</Link>
-      <div className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-10">
-        {[1, 2, 3,4].map((item, ind) => (
+      {/* title card  */}
+      <div className="flex justify-between items-center">
+        <h1 className="text-start text-3xl text-gray-700">Custom Nike Shoe</h1>
+      </div>
+      <div className="flex space-x-2">
+        {[1, 2, 3].map((item, ind) => (
           <div
             key={ind}
-            className="bg-purple-50 text-center transform duration-500 cursor-pointer rounded-lg shadow-lg "
+            className="group my-10 flex w-full max-w-xs flex-col overflow-hidden rounded-lg border border-gray-100 bg-white shadow-md"
           >
-            <div className="flex justify-center items-center rounded-md mt-5">
+            <a
+              className="relative mx-3 mt-3 flex h-60 overflow-hidden rounded-xl"
+              href="#"
+            >
               <img
-                className="bg-cover w-[200px] h-[170px] "
-                src="https://timeaccess-store.com/cdn/shop/files/GA-2100TLS-8ADRF_700x.jpg?v=1727965054"
+                className="peer absolute top-0 right-0 h-full w-full object-cover"
+                src="https://images.unsplash.com/flagged/photo-1556637640-2c80d3201be8?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                alt="product image"
               />
-            </div>
-
-            <div className="flex flex-col space-y-2 py-2">
-              <h2 className="font-semibold text-base tracking-widest">
-                Genaring
-              </h2>
-              <h1 className="text-[12px]  text-[#C3C3C3]">
-                Soft Plushy Cushion Chair a beautiful {" "}
-              </h1>
-              <h1 className="text-xl text-emerald-600">$60</h1>
-            </div>
-
-            <div className="space-x-1 flex justify-center mb-3">
-              {/* Stars for rating */}
-              {[...Array(3)].map((_, index) => (
+              <img
+                className="peer absolute top-0 -right-96 h-full w-full object-cover transition-all delay-100 duration-1000 hover:right-0 peer-hover:right-0"
+                src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                alt="product image"
+              />
+              <svg
+                className="pointer-events-none absolute inset-x-0 bottom-5 mx-auto text-3xl text-white transition-opacity group-hover:animate-ping group-hover:opacity-30 peer-hover:opacity-0"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+                role="img"
+                width="1em"
+                height="1em"
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 32 32"
+              >
+                <path
+                  fill="currentColor"
+                  d="M2 10a4 4 0 0 1 4-4h20a4 4 0 0 1 4 4v10a4 4 0 0 1-2.328 3.635a2.996 2.996 0 0 0-.55-.756l-8-8A3 3 0 0 0 14 17v7H6a4 4 0 0 1-4-4V10Zm14 19a1 1 0 0 0 1.8.6l2.7-3.6H25a1 1 0 0 0 .707-1.707l-8-8A1 1 0 0 0 16 17v12Z"
+                />
+              </svg>
+            </a>
+            <div className="mt-4 px-5 pb-5">
+              <a href="#">
+                <h5 className="text-xl tracking-tight text-slate-900">
+                  Nike Air MX Super 2500 - Red
+                </h5>
+              </a>
+              <div className="mt-2 mb-5 flex items-center justify-between">
+                <p>
+                  <span className="text-3xl font-bold text-slate-900">
+                    $449
+                  </span>
+                  <span className="text-sm text-slate-900 line-through ml-2">
+                    $699
+                  </span>
+                </p>
+              </div>
+              <a
+                href="#"
+                className="flex items-center justify-center rounded-md bg-slate-900 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-blue-300"
+              >
                 <svg
-                  key={index}
-                  className="w-4 h-4 mx-px fill-current text-yellow-500"
                   xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 14 14"
+                  className="mr-2 h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth="2"
                 >
-                  <path d="M6.43 12l-2.36 1.64a1 1 0 0 1-1.53-1.11l.83-2.75a1 1 0 0 0-.35-1.09L.73 6.96a1 1 0 0 1 .59-1.8l2.87-.06a1 1 0 0 0 .92-.67l.95-2.71a1 1 0 0 1 1.88 0l.95 2.71c.13.4.5.66.92.67l2.87.06a1 1 0 0 1 .59 1.8l-2.3 1.73a1 1 0 0 0-.34 1.09l.83 2.75a1 1 0 0 1-1.53 1.1L7.57 12a1 1 0 0 0-1.14 0z"></path>
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                  />
                 </svg>
-              ))}
-              {/* Empty stars for rating */}
-              {[...Array(2)].map((_, index) => (
-                <svg
-                  key={index}
-                  className="w-4 h-4 mx-px fill-current text-gray-300"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 14 14"
-                >
-                  <path d="M6.43 12l-2.36 1.64a1 1 0 0 1-1.53-1.11l.83-2.75a1 1 0 0 0-.35-1.09L.73 6.96a1 1 0 0 1 .59-1.8l2.87-.06a1 1 0 0 0 .92-.67l.95-2.71a1 1 0 0 1 1.88 0l.95 2.71c.13.4.5.66.92.67l2.87.06a1 1 0 0 1 .59 1.8l-2.3 1.73a1 1 0 0 0-.34 1.09l.83 2.75a1 1 0 0 1-1.53 1.1L7.57 12a1 1 0 0 0-1.14 0z"></path>
-                </svg>
-              ))}
+                Add to cart
+              </a>
             </div>
-
-            <button className=" w-full  p-2 px-5 bg-[#0995BD] text-white rounded-md transition-opacity duration-300">
-              Add To Cart
-            </button>
           </div>
         ))}
       </div>

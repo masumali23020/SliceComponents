@@ -3,20 +3,25 @@ import { Link } from "react-router-dom";
 
 const NikeShoe = () => {
   return (
-    <div className="bg-gray-900 py-16">
+    <div className="bg-gray-900 ">
       <div className="container mx-auto px-4">
-        <div className="text-3xl font-bold text-white mb-8">
-
-        <Link to="https://www.figma.com/design/qaPknthBVRM93en1jn2VkY/Figma-Interactive-Product-Card-UI-Design-(Community)?node-id=6-90&node-type=frame&m=dev" >
-          Introducing Our Latest Product
+    
+      {/* title card  */}
+      <div className="flex justify-between items-center">
+        <h1 className="text-start text-3xl text-gray-200 m-3"> Nike Shoe</h1>
+        <Link
+         to="https://www.figma.com/design/qaPknthBVRM93en1jn2VkY/Figma-Interactive-Product-Card-UI-Design-(Community)?node-id=6-90&node-type=frame&m=dev"
+          target="_blank"
+        >
+          <span className=" text-white text-lg underline hover:text-blue-400">link</span>{" "}
         </Link>
-        </div>
+      </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Card 1 */}
           {[1, 2, 3].map((item, ind) => (
             <div
               key={ind}
-              className="bg-white rounded-lg shadow-lg p-8 relative hover:bg-gray-100"
+              className="bg-white rounded-lg shadow-lg p-5 relative hover:bg-gray-100"
             >
               <div className="relative overflow-hidden">
                 <img
@@ -69,8 +74,6 @@ const NikeShoe = () => {
                 <div className=" h-8 w-8 rounded-full bg-[#63CEA7;]"></div>
                 <div className=" h-8 w-8 rounded-full bg-[#18C2F8]"></div>
               </div>
-
-             
             </div>
           ))}
         </div>
