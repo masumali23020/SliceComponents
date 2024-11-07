@@ -21,6 +21,7 @@ const Products = () => {
         <ClockCard />
         <NikeShoe />
         <ProductCard />
+      
         
         {/* day 2 */}
         <Iphone />
@@ -30,6 +31,7 @@ const Products = () => {
         {/* day 3  */}
        <Ecards />
        <HouseCard />
+
 
     </div>
   )

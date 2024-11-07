@@ -34,21 +34,22 @@ const NikeShoe = () => {
                 <h3 className="text-lg font-bold text-gray-900 w-full text-start">
                   Product Name
                 </h3>
-                <div className="relative group w-full">
+                <div className="relative group w-full group">
                   {/* Button for adding */}
-                  <button className="opacity-100 group-hover:opacity-0 bg-gray-900 text-white py-2 px-4 rounded-full font-bold transition-opacity absolute -top-3 right-0 transform duration-150">
+                  <button className="group-hover:invisible bg-gray-900 text-white py-2 px-4 rounded-full font-bold transition-opacity absolute -top-3 right-0 transform duration-300 text-xl ">
                     +
                   </button>
                   {/* Button for "Add to" */}
-                  <button className=" absolute -top-3 right-0  opacity-0 group-hover:opacity-100 transition-opacity bg-gray-800 text-white font-medium leading-7 py-2 px-3 rounded-full text-[17px] flex items-center transition-transform  duration-150  ease-in ">
+                  <button className=" absolute -top-3 right-0 invisible group-hover:visible  bg-gray-800 text-white font-medium leading-7 py-2 px-3 rounded-full text-[17px] flex items-center transition-transform  duration-300  ease-out text-xl ">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="white"
                       className="mr-2"
-                      width={12}
-                      height={12}
+                      width={18}
+                      height={18}
+                      
                     >
                       <path
                         strokeLinecap="round"

@@ -1,39 +1,31 @@
-
-import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
-import './App.css'
-import Navbar from './components/Navber'
-import Products from './pages/prducts/Products'
-
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import "./App.css";
+import Navbar from "./components/Navber";
+import Products from "./pages/prducts/Products";
 
 function App() {
-
- 
-
   return (
-
     <Router>
-    <div className="flex">
-       
+      <div className="flex">
         <div className="flex-1">
-            <Navbar />
-            <Routes>
-                <Route path="/" element={<Products />} />
-           
-                
-            </Routes>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Products />} />
+          
+          </Routes>
         </div>
-    </div>
-</Router>
-  //   <div className=' w-full h-screen'>
-  //  <Shoe />
+      </div>
+    </Router>
+    //   <div classNameName=' w-full h-screen'>
+    //  <Shoe />
     // <ShoeOverLay />
-  //   <ProductCard />
-  //   <NikeShoe />
-  //   <ClockCard />
-  //   <CustomColorCard />
-   
-  //   </div>
-  )
+    //   <ProductCard />
+    //   <NikeShoe />
+    //   <ClockCard />
+    //   <CustomColorCard />
+
+    //   </div>
+  );
 }
 
-export default App
+export default App;
